@@ -17,7 +17,7 @@
 }
 
 .navbar {
-  width: 1200px;
+  width: 1330px;
   height: 75px;
   margin: auto;
 }
@@ -38,7 +38,7 @@
 }
 
 .menu {
-  width: 400px;
+  width: 700px;
   float: left;
   height: 70px;
 }
@@ -52,7 +52,7 @@ ul {
 
 ul li {
   list-style: none;
-  margin-left: 45px;
+  margin-left: 50px;
   margin-top: 27px;
   font-size: 20px;
 }
@@ -113,9 +113,10 @@ ul li a:hover {
 }
 
 .content {
-  width: 1200px;
+  width: 1400px;
   height: auto;
   margin: auto;
+  top: 80px;
   color: #fff;
   position: relative;
 }
@@ -167,14 +168,10 @@ ul li a:hover {
 .form {
   width: 250px;
   height: 380px;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.8) 50%
-  );
+  background: linear-gradient(to top, transparent);
   position: absolute;
-  top: -20px;
-  left: 870px;
+  top: -25px;
+  left: 920px;
   border-radius: 10px;
   padding: 25px;
 }
@@ -183,9 +180,9 @@ ul li a:hover {
   width: 220px;
   font-family: sans-serif;
   text-align: center;
-  color: #fff33f;
-  font-size: 22px;
-  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  background-color: #fff33f;
   border-radius: 10px;
   margin: 2px;
   padding: 8px;
@@ -272,4 +269,15 @@ ul li a:hover {
 
 .icon ion-icon:hover {
   color: #fff33f;
+}
+
+.weatherwidget-io {
+  width: 320px;
+  margin-right: 100px;
+  margin-top: 20px;
+  padding-left: 50px;
+  float: right;
+  position: absolute;
+  border-radius: 15px;
+  background: transparent;
 }
