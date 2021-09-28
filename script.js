@@ -1,21 +1,31 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+window.onload = () =>{
+    let button = document.querySelector('#btn');
+    button.addEventListener('click', calculateBMI);
+}
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAmkWgl8mlsoocCLsnJ3N5GNHKBTJInO3M",
-  authDomain: "fir-test-c60fb.firebaseapp.com",
-  projectId: "fir-test-c60fb",
-  storageBucket: "fir-test-c60fb.appspot.com",
-  messagingSenderId: "991280751942",
-  appId: "1:991280751942:web:986e28426fa43b51293147",
-  measurementId: "G-627M73FDFV"
-};
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+function calculateBMI(){
+    let height = parseInt(document.querySelector('#height').value);
+    let weight = parseInt(document.querySelector('#weight').value);
+    let result = document.querySelector('#result');
+    console.log(height);
+    if(height === '' || isNaN(height) || height < 0){
+        result.innerHTML = 'Please provide a valid height';
+    }else if(weight === '' || isNaN(weight) || weight < 0){
+        result.innerHTML = 'Please provide a valid weight';
+    }
+
+
+    else{
+         let bmi = (weight / ((height * height) / 10000)).toFixed(2); 
+
+
+         if(bmi < 18.6){
+             result.innerHTML = `Under Weight : <span>${bmi}</span>`;
+         }else if(bmi >= 18.6 && bmi < 24.9){
+            result.innerHTML = `Normal : <span>${bmi}</span>`;
+         } else{
+            result.innerHTML = `Over Weight : <span>${bmi}</span>`;
+         }
+    }
+}
