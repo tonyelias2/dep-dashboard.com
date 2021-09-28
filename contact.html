@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <input type="file" name = "file" onchange="selectedvideo(this);"/>
 
-    <video autoplay id="video" controls>
-        <source id = "source" type= "video/mp4">
-    </video>
+    <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+    <div class="gcse-search"></div>
 
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Login</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="tvs.html">Live TVs</a></li>
-            <li><a href="cities.html">Live Cities</a></li>
-            <li><a href="excel.html">Excel</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2>
+                    <class class="logo">Design <font color="#fff33f">Engineering</font> Partners</class>
+                </h2>
+            </div>
 
-    <script>
-        function selectedvideo(self) {
-            var file = self.files[0];
-            var reader = new FileReader();
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tvs.html">Live TVs</a></li>
+                    <li><a href="cities.html">Live Cities</a></li>
+                    <li><a href="excel.html">Excel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5"
+                data-theme="orange" data-basecolor="#fff33f">Lebanon Weather</a>
+            <script>
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
+            <br>
+            <br>
+            
+            
 
-            reader.onload = function(e) {
-                var src = e.target.result;
-                var video = document.getElementById ("video");
-                var source = document.getElementById("source");
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
-                source.setattribute("src" , src);
-                video.load();
-                video.play();
 
-            };
-            reader.readAsDataURL(file);
-        }
-    </script>
+
+
+
+
+
 </body>
+
 </html>

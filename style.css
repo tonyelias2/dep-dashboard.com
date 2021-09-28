@@ -17,13 +17,13 @@
 }
 
 .navbar {
-  width: 1330px;
+  width: 1830px;
   height: 75px;
   margin: auto;
 }
 
 .icon {
-  width: 200px;
+  width: 500px;
   float: left;
   height: 70px;
 }
@@ -283,4 +283,9 @@ ul li a:hover {
   border-radius: 15px;
   background: transparent;
   right: -50px;
+}
+
+.excel {
+  float: right;
+  margin-left: 1000px;
 }
