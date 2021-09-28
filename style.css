@@ -11,6 +11,7 @@
       rgba(0, 0, 0, 0.5) 50%
     ),
     url("pexels-pixabay-268533.jpg");
+  background-color: #000;
   background-position: center;
   background-size: cover;
   height: 109vh;
