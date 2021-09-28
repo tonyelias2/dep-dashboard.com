@@ -54,12 +54,21 @@
             
             </div>
             
+            
 
                 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 
 
+<div class="loan">
+    <h1>Loan Calculator</h1>
+    <p>Loan Amount: <input id="amount" type="number" value="1" onchange="calculateLoan()"> $</p>
+    <p>Interest Rate: <input id="interest" type="number" value="0.1" onchange="calculateLoan()"> %</p>
+    <p>Months to Pay: <input id="months" type="number" value="1" onchange="calculateLoan()"></p>
+    <h2 id="payment"></h2>
+</div>
 
+<script src="app.js"></script>
 
 
 
