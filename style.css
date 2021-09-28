@@ -168,10 +168,10 @@ ul li a:hover {
 .form {
   width: 250px;
   height: 380px;
-  background: linear-gradient(to top, transparent);
+  background: transparent;
   position: absolute;
-  top: -25px;
-  left: 920px;
+  top: 300px;
+  left: 420px;
   border-radius: 10px;
   padding: 25px;
 }
@@ -220,6 +220,8 @@ ul li a:hover {
   margin-top: 30px;
   font-size: 18px;
   border-radius: 10px;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
   color: #fff;
   transition: 0.4s ease;
@@ -280,4 +282,5 @@ ul li a:hover {
   position: absolute;
   border-radius: 15px;
   background: transparent;
+  right: -50px;
 }

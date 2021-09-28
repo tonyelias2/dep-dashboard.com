@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" name = "file" onchange="selectedvideo(this);"/>
+
+    <video autoplay id="video" controls>
+        <source id = "source" type= "video/mp4">
+    </video>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tvs.html">Live TVs</a></li>
+            <li><a href="cities.html">Live Cities</a></li>
+            <li><a href="excel.html">Excel</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function selectedvideo(self) {
+            var file = self.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                var src = e.target.result;
+                var video = document.getElementById ("video");
+                var source = document.getElementById("source");
+
+                source.setattribute("src" , src);
+                video.load();
+                video.play();
+
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
