@@ -328,7 +328,7 @@ p {
   outline: none;
 }
 
-button {
+buttonN {
   width: 150px;
   height: 35px;
   margin-top: 25px;
@@ -381,4 +381,59 @@ h1 {
 
 h2 {
   margin-top: 40px;
+}
+
+body {
+  background-color: black;
+}
+
+.clock {
+  color: #fff33f;
+  font-size: 60px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 7px;
+
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.calculator {
+  margin-top: 5%;
+  width: 450px;
+}
+
+.screen {
+  background: transparent;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 60px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  flex: 22%;
+  font-size: 64px;
+  border: 1px solid black;
+}
+
+.btn {
+  background: orange;
+  color: white;
+  height: 110px;
+  margin-top: 0px;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-red {
+  background-color: red;
 }

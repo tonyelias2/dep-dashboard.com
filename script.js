@@ -40,3 +40,70 @@ function calculateLoan(){
 
     document.querySelector('#payment').innerHTML = '$' + payment + '/ Month';
 }
+
+
+window.onload = () => {
+
+    function showTime() {
+        let date = new Date();
+        let hour = date.getHours(); // 0 - 23
+        let minutes = date.getMinutes(); // 0 -59
+        let seconds = date.getSeconds(); // 0 -59
+
+        let session = 'AM';
+
+        if (hour === 0) {
+            hour = 12;
+        }
+
+        if (hour > 12) {
+            hour = hour - 12;
+            session = 'PM';
+        }
+
+        hour = (hour < 10) ? '0' + hour : hour;
+        minutes = (minutes < 10) ? '0' + minutes : minutes;
+        seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+        let time = hour + ':' + minutes + ':' + seconds + ' ' + session;
+
+        document.querySelector('#myTime').innerText = time;
+
+
+        setTimeout(showTime, 1000);
+    }
+
+    showTime();
+
+}
+
+window.onload = () =>{
+    let screen  = document.querySelector('.screen');
+    let buttons = document.querySelectorAll('.numbers');
+    let clear = document.querySelector('.btn-red');
+    let equal = document.querySelector('.btn-green');
+
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(e){
+            let value = e.target.dataset.num;
+            screen.value += value; // 4 => 4 + 9 = 49
+            console.log(value);
+
+        })
+    })
+
+    equal.addEventListener('click', function(){
+        if(screen.value === ''){
+            screen.value = "Enter value";
+        }else{
+            let answer = eval(screen.value);
+            screen.value = answer;
+        }
+    })
+
+
+    clear.addEventListener('click', function(){
+        screen.value = '';
+    })
+}
