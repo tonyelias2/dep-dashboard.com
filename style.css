@@ -402,3 +402,7 @@ body {
 .clock-time {
   margin-top: 80px;
 }
+.converter {
+  margin-top: 80px;
+  float: right;
+}
