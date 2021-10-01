@@ -595,3 +595,31 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 3px;
 }
+
+body {
+  background-color: black;
+}
+
+.clock {
+  color: #fff33f;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 7px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Lebanon {
+  color: #fff33f;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 7px;
+
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+}
