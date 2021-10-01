@@ -623,3 +623,20 @@ body {
   top: 40%;
   transform: translateX(-50%) translateY(-50%);
 }
+.clockl {
+}
+
+.clocke {
+  margin-left: 40%;
+  margin-top: -8.8%;
+}
+
+.clockt {
+  margin-top: -8.8%;
+  margin-right: 80%;
+}
+
+.clockp {
+  margin-top: -8.8%;
+  margin-right: 40%;
+}
