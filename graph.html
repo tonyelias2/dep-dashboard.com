@@ -1,9 +1,8 @@
-
 <!DOCTYPE HTML>
 <html>
 
 <head>
-    
+    <link rel="stylesheet" href="js">
     <script type="text/javascript">
         window.onload = function () {
             var dps = []; //dataPoints. 
@@ -19,11 +18,26 @@
             });
 
             function addDataPointsAndRender() {
-                xValue = Number(document.getElementById("xValue").value);
-                yValue = Number(document.getElementById("yValue").value);
+                xValue = Number(document.getElementById("x0Value").value);
+                yValue = Number(document.getElementById("y0Value").value);
+                xValue = Number(document.getElementById("x1Value").value);
+                yValue = Number(document.getElementById("y1Value").value);
+                xValue = Number(document.getElementById("x2Value").value);
+                yValue = Number(document.getElementById("y2Value").value);
+                xValue = Number(document.getElementById("x3Value").value);
+                yValue = Number(document.getElementById("y3Value").value);
+                xValue = Number(document.getElementById("x4Value").value);
+                yValue = Number(document.getElementById("y4Value").value);
+                xValue = Number(document.getElementById("x5Value").value);
+                yValue = Number(document.getElementById("y5Value").value);
+                xValue = Number(document.getElementById("x6Value").value);
+                yValue = Number(document.getElementById("y6Value").value);
+                xValue = Number(document.getElementById("x7Value").value);
+                yValue = Number(document.getElementById("y7Value").value);
                 dps.push({
                     x: xValue,
-                    y: yValue
+                    y: yValue,
+                    
                 });
                 chart.render();
             }
@@ -31,19 +45,59 @@
             var renderButton = document.getElementById("renderButton");
             renderButton.addEventListener("click", addDataPointsAndRender);
         }
+
+      
+       
     </script>
+
+    
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 
 <body>
-    X Value:
-    <input id="xValue" type="number" step="any" placeholder="Enter X-Value"> Y Value:
-    <input id="yValue" type="number" step="any" placeholder="Enter Y-Value">
+    X0 Value:
+    <input id="x0Value" type="number" step="any" placeholder="Enter X-Value"> Y0 Value:
+    <input id="y0Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X1 Value:
+    <input id="x1Value" type="number" step="any" placeholder="Enter X-Value"> Y1 Value:
+    <input id="y1Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X2 Value:
+    <input id="x2Value" type="number" step="any" placeholder="Enter X-Value"> Y2 Value:
+    <input id="y2Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X3 Value:
+    <input id="x3Value" type="number" step="any" placeholder="Enter X-Value"> Y3 Value:
+    <input id="y3Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X4 Value:
+    <input id="x4Value" type="number" step="any" placeholder="Enter X-Value"> Y4 Value:
+    <input id="y4Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X5 Value:
+    <input id="x5Value" type="number" step="any" placeholder="Enter X-Value"> Y5 Value:
+    <input id="y5Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X6 Value:
+    <input id="x6Value" type="number" step="any" placeholder="Enter X-Value"> Y6 Value:
+    <input id="y6Value" type="number" step="any" placeholder="Enter Y-Value">
+    <br>
+    X7 Value:
+    <input id="x7Value" type="number" step="any" placeholder="Enter X-Value"> Y7 Value:
+    <input id="y7Value" type="number" step="any" placeholder="Enter Y-Value">
     
     <button id="renderButton">Add DataPoint & Render</button>
     <div id="chartContainer" style="height: 270px; width: 100%;">
     </div>
     
+    
+
+
+    <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
+        xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+    
+ 
 </body>
 
 </html>
