@@ -34,8 +34,8 @@
             <br><br><br><br><br><br><br>
             <div class="clockl">
             <div style="text-align:center;padding:1em 0;">
-                <h4><a style="color: white;" href="https://www.zeitverschiebung.net/en/city/276781"><span
-                            style="color: white;"></span><br />Beirut, Lebanon</a></h4> <iframe
+                <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/276781"><span
+                            style="color: yellow;"></span><br />Beirut, Lebanon</a></h4> <iframe
                     src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FBeirut"
                     width="100%" height="90" frameborder="0" seamless></iframe>
             </div>
@@ -43,30 +43,34 @@
 
             <div class="clocke">
             <div style="text-align:center;padding:1em 0;">
-                <h4><a style="color: white;" href="https://www.zeitverschiebung.net/en/city/4257227"><span
-                            style="color:gray;"></span><br />Evansville, United States</a></h4> <iframe
+                <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/4257227"><span
+                            style="color:yellow;"></span><br />Evansville, United States</a></h4> <iframe
                     src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago"
                     width="100%" height="90" frameborder="0" seamless></iframe>
             </div>
             </div>
             <div class="clockt">
                 <div style="text-align:center;padding:1em 0;">
-                    <h4><a style="color: white;" href="https://www.zeitverschiebung.net/en/city/6167865"><span
-                                style="color:gray;"></span><br />Toronto, Canada</a></h4> <iframe
+                    <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/6167865"><span
+                                style="color:yellow;"></span><br />Toronto, Canada</a></h4> 
+                    <iframe
                         src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto"
-                        width="100%" height="90" frameborder="0" seamless></iframe>
+                        width="100%" height="90" frameborder="0" seamless>
+                    </iframe>
                 </div>
             </div>
 
             <div class="clockp">
                 <div style="text-align:center;padding:1em 0;">
-                    <h4><a style="color: white ;" href="https://www.zeitverschiebung.net/en/city/2988507"><span
-                                style="color:gray;"></span><br />Paris, France</a></h4> <iframe
+                    <h4><a style="color: yellow ;" href="https://www.zeitverschiebung.net/en/city/2988507"><span
+                                style="color:yellow;"></span><br />Paris, France</a></h4> <iframe
                         src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FParis"
                         width="100%" height="90" frameborder="0" seamless></iframe>
                 </div>
             </div>
+
             <br>
+            
             <div id="cf0ab4d41e8fb30fec2eed8eac7dad71" class="ww-informers-box-854753">
                 <p class="ww-informers-box-854754"><a href="https://world-weather.info/forecast/lebanon/beyrouth/month/">Weather in
                         Beirut for a month</a><br><a
@@ -165,30 +169,32 @@
                     }
                 }
             </style>
-            <br>
-   
-            <iframe src="url" width="100%" height="100"  title="Home Page"></iframe>
+            
+            <iframe id="myIframe" width="100%" height="300" frameborder="0" seamless></iframe>
             <form id="myForm" action="/dep-dashboard.com-main/home.html">
-                Insert URL: <input type="text" id="url" ><br>
+                Please Insert The Embedded Code Here: <input type="text" id="url" ><br>
                 <input type="button" onclick="myFunction()" value="Submit form">
               </form>
-              
-              <script>
-                  
-              function myFunction() {
-                var url = document.getElementById("url").value
-                alert(document.getElementById("url").value)
-              }
-              </script>  
+
+            
                         
 
-                
-
+            <script>
+                function myFunction() {
+                var url_string = document.getElementById("url").value
+                let myIframe = document.getElementById("myIframe");
+                let width = "728";
+                let height = "90";        
+                myIframe.src = url_string;
+                alert(document.getElementById("url").value)
+              }
+               
+            </script>
 
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
-        
-        
+
+
 
 </body>
 
