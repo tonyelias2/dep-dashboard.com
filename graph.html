@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="js">
     <script type="text/javascript">
         window.onload = function () {
             var dps = []; //dataPoints. 
@@ -18,214 +17,123 @@
             });
 
             function addDataPointsAndRender() {
-                xValue = Number(document.getElementById("x0Value").value);
-                yValue = Number(document.getElementById("y0Value").value);
-                xValue = Number(document.getElementById("x1Value").value);
-                yValue = Number(document.getElementById("y1Value").value);
-                xValue = Number(document.getElementById("x2Value").value);
-                yValue = Number(document.getElementById("y2Value").value);
-                xValue = Number(document.getElementById("x3Value").value);
-                yValue = Number(document.getElementById("y3Value").value);
-                xValue = Number(document.getElementById("x4Value").value);
-                yValue = Number(document.getElementById("y4Value").value);
-                xValue = Number(document.getElementById("x5Value").value);
-                yValue = Number(document.getElementById("y5Value").value);
-                xValue = Number(document.getElementById("x6Value").value);
-                yValue = Number(document.getElementById("y6Value").value);
-                xValue = Number(document.getElementById("x7Value").value);
-                yValue = Number(document.getElementById("y7Value").value);
+                xValue = Number(document.getElementById("xValue").value);
+                yValue = Number(document.getElementById("yValue").value);
                 dps.push({
                     x: xValue,
-                    y: yValue,
-                    
+                    y: yValue
+                });
+                chart.render();
+            }
+
+            function add() {
+                x1Value = Number(document.getElementById("x1Value").value);
+                y1Value = Number(document.getElementById("y1Value").value);
+                dps.push({
+                    x: x1Value,
+                    y: y1Value
+                });
+                chart.render();
+            }
+
+            function add1() {
+                x2Value = Number(document.getElementById("x2Value").value);
+                y2Value = Number(document.getElementById("y2Value").value);
+                dps.push({
+                    x: x2Value,
+                    y: y2Value
+                });
+                chart.render();
+            }
+
+            function add2() {
+                x3Value = Number(document.getElementById("x3Value").value);
+                y3Value = Number(document.getElementById("y3Value").value);
+                dps.push({
+                    x: x3Value,
+                    y: y3Value
+                });
+                chart.render();
+            }
+
+            function add3() {
+                x4Value = Number(document.getElementById("x4Value").value);
+                y4Value = Number(document.getElementById("y4Value").value);
+                dps.push({
+                    x: x4Value,
+                    y: y4Value
+                });
+                chart.render();
+            }
+
+            function add4() {
+                x5Value = Number(document.getElementById("x5Value").value);
+                y5Value = Number(document.getElementById("y5Value").value);
+                dps.push({
+                    x: x5Value,
+                    y: y5Value
                 });
                 chart.render();
             }
 
             var renderButton = document.getElementById("renderButton");
             renderButton.addEventListener("click", addDataPointsAndRender);
+
+
+            var renderButton = document.getElementById("add");
+            renderButton.addEventListener("click", add);
+
+            var renderButton = document.getElementById("add1");
+            renderButton.addEventListener("click", add1);
+
+            var renderButton = document.getElementById("add2");
+            renderButton.addEventListener("click", add2);
+
+            var renderButton = document.getElementById("add3");
+            renderButton.addEventListener("click", add3);
+
+            var renderButton = document.getElementById("add4");
+            renderButton.addEventListener("click", add4);
         }
-
-      
-       
     </script>
-
-    
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 
 <body>
     X0 Value:
-    <input id="x0Value" type="number" step="any" placeholder="Enter X-Value"> Y0 Value:
-    <input id="y0Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="xValue" type="number" step="any" placeholder="Enter X0-Value"> Y0 Value:
+    <input id="yValue" type="number" step="any" placeholder="Enter Y0-Value">
+    <button id="renderButton">Add</button>
     <br>
     X1 Value:
-    <input id="x1Value" type="number" step="any" placeholder="Enter X-Value"> Y1 Value:
-    <input id="y1Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="x1Value" type="number" step="any" placeholder="Enter X1-Value"> Y1 Value:
+    <input id="y1Value" type="number" step="any" placeholder="Enter Y1-Value">
+    <button id="add">Add</button>
     <br>
     X2 Value:
-    <input id="x2Value" type="number" step="any" placeholder="Enter X-Value"> Y2 Value:
-    <input id="y2Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="x2Value" type="number" step="any" placeholder="Enter X2-Value"> Y2 Value:
+    <input id="y2Value" type="number" step="any" placeholder="Enter Y2-Value">
+    <button id="add1">Add</button>
     <br>
     X3 Value:
-    <input id="x3Value" type="number" step="any" placeholder="Enter X-Value"> Y3 Value:
-    <input id="y3Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="x3Value" type="number" step="any" placeholder="Enter X3-Value"> Y3 Value:
+    <input id="y3Value" type="number" step="any" placeholder="Enter Y3-Value">
+    <button id="add2">Add</button>
     <br>
     X4 Value:
-    <input id="x4Value" type="number" step="any" placeholder="Enter X-Value"> Y4 Value:
-    <input id="y4Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="x4Value" type="number" step="any" placeholder="Enter X4-Value"> Y4 Value:
+    <input id="y4Value" type="number" step="any" placeholder="Enter Y4-Value">
+    <button id="add3">Add</button>
     <br>
     X5 Value:
-    <input id="x5Value" type="number" step="any" placeholder="Enter X-Value"> Y5 Value:
-    <input id="y5Value" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="x5Value" type="number" step="any" placeholder="Enter X5-Value"> Y5 Value:
+    <input id="y5Value" type="number" step="any" placeholder="Enter Y5-Value">
+    <button id="add4">Add</button>
     <br>
-    X6 Value:
-    <input id="x6Value" type="number" step="any" placeholder="Enter X-Value"> Y6 Value:
-    <input id="y6Value" type="number" step="any" placeholder="Enter Y-Value">
-    <br>
-    X7 Value:
-    <input id="x7Value" type="number" step="any" placeholder="Enter X-Value"> Y7 Value:
-    <input id="y7Value" type="number" step="any" placeholder="Enter Y-Value">
-    
-    <button id="renderButton">Add DataPoint & Render</button>
+
+
     <div id="chartContainer" style="height: 270px; width: 100%;">
     </div>
-    
-    
-
-
-    <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
-        xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
-    
- 
-<button>
-    <a href="/dep-dashboard.com-main/home.html">Go Back To Home Page</a>
-</button>
-<br><br><br>
-</body>
-
-</html>
-
-
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Getting Started with Chart JS with www.chartjs3.com</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-
-        .chartMenu {
-            width: 100vw;
-            height: 40px;
-            background: #1A1A1A;
-            color: rgba(255, 26, 104, 1);
-        }
-
-        .chartMenu p {
-            padding: 10px;
-            font-size: 20px;
-        }
-
-        .chartCard {
-            width: 100vw;
-            height: calc(100vh - 40px);
-            background: rgba(255, 26, 104, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .chartBox {
-            width: 700px;
-            padding: 20px;
-            border-radius: 20px;
-            border: solid 3px rgba(255, 26, 104, 1);
-            background: white;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="chartMenu">
-
-    </div>
-    <div class="chartCard">
-        <div class="chartBox">
-            <canvas id="myChart"></canvas>
-            <input id="barvalue" onkeyup="updateChart(this)" type="number">
-            <input onkeyup="updateLabel(this)" type="text">
-        </div>
-    </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // setup 
-        const data = {
-            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            datasets: [{
-                label: 'Weekly Sales',
-                data: [18, 12, 6, 9, 12, 3, 9],
-                backgroundColor: [
-                    'rgba(255, 26, 104, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(0, 0, 0, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 26, 104, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(0, 0, 0, 1)'
-                ],
-                borderWidth: 1
-            }]
-        };
-
-        // config 
-        const config = {
-            type: 'bar',
-            data,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        };
-
-        // render init block
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-
-        function updateChart(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data.push(barvalues.value);
-            myChart.config.data.datasets[0].data.shift();
-            myChart.update();
-        }
-
-        function updateLabel(labelname) {
-            myChart.config.data.datasets[0].label = labelname.value;
-            myChart.update();
-
-        }
-    </script>
-
 </body>
 
 </html>
