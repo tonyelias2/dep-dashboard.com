@@ -3,7 +3,8 @@
 
 <head>
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
+    
     <script src="script.js"></script>
 </head>
 
@@ -32,14 +33,40 @@
                 </ul>
             </div>
      <br><br><br><br><br><br><br><br><br><br><br>       
-<form action="https://formsubmit.co/tony_elias97@hotmail.com" method="POST">
-    <input type="hidden" name="_subject" value="New Reminder!">
-    <input type="email" name="email" placeholder="Please Enter An Email Address" required>
-    <input type="hidden" name="_next" value="http://127.0.0.1:5500/Reminder.html#gsc.tab=0/thanks.html">
-    <input type="text" name="name" placeholder="Write Your Messahe Here!" required>
-    
-    <button type="submit">Send</button>
-</form>
+
+<section>
+    <div class="containerr">
+        <form action="https://formspree.io/f/myylvozz" method="POST" id="my-form">
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="fisrtName" >
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+        <div class="form-group">
+            <label for="massage">Massage</label>
+            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="status"></div>
+</section>
+
+
+
+
 
 
 
