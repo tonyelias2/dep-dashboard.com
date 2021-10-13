@@ -94,15 +94,14 @@ ul li a:hover {
 }
 
 .btn {
-  width: 100px;
-  height: 42px;
-  background: #fff33f;
-  border: 2px solid #fff33f;
-  margin-top: 5px;
-  color: #000;
-  font-size: 15px;
-  border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background-color: #fff33f;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 14px 40px;
 }
 
 .btn:focus {
@@ -185,13 +184,13 @@ body,
 #quote {
   font-family: "Bradley Hand ITC";
   text-align: center;
-  font-size: 20px;
+  font-size: 35px;
   color: white;
 }
 
 #author {
   margin-top: 10px;
   font-family: "Bradley Hand ITC";
-  font-size: 35px;
+  font-size: 40px;
   color: #fff33f;
 }
