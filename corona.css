@@ -135,7 +135,7 @@ ul li a:hover {
 section {
   width: 98%;
 
-  height: 80vh;
+  height: 87vh;
 
   display: grid;
 
@@ -268,9 +268,9 @@ section {
 
   border-radius: 0 0 15px 15px;
 
-  background: #2196f3;
+  background: #fff33f;
 
-  color: #fff;
+  color: #000;
 
   transition: 0.3s;
 
