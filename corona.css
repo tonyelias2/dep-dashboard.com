@@ -1,11 +1,6 @@
 * {
   margin: 0;
-
   padding: 0;
-
-  box-sizing: border-box;
-
-  font-family: Josefin Sans;
 }
 
 .main {
@@ -44,7 +39,7 @@
 }
 
 .menu {
-  width: 1300px;
+  width: 700px;
   float: left;
   height: 70px;
 }
