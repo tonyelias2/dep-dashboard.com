@@ -328,16 +328,7 @@ p {
   outline: none;
 }
 
-button {
-  width: 150px;
-  height: 65px;
-  margin-top: 25px;
-  border-radius: 10px;
-  border: none;
-  background-color: #fff33f;
-  color: #000;
-  font-size: 20px;
-}
+
 
 #result {
   color: #fff;
@@ -347,8 +338,11 @@ button {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: pink;
+  font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background: url("pexels-pixabay-268533.jpg");
 }
 
 .loan {
