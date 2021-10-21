@@ -60,7 +60,11 @@
             <button onclick="removeNode12()">Remove The 12th Video</button>
             
             <br><br>
-            
+            <form id="myForm" action="/dep-dashboard.com-main/home.html">
+                Please Insert The Embedded Code Here: <input type="text" id="url" placeholder="https://www.youtube.com/embed/ID" ><br>
+                <input type="button" onclick="myFunction()" value="Add Video">
+                <iframe id="myIframe" width="100%" height="280" frameborder="0" seamless></iframe>
+              </form>
 
 
 
@@ -147,7 +151,17 @@
         </class>
         
 
-
+        <script>
+            function myFunction() {
+            var url_string = document.getElementById("url").value
+            let myIframe = document.getElementById("myIframe");
+            let width = "728";
+            let height = "90";        
+            myIframe.src = url_string;
+            alert(document.getElementById("url").value)
+          }
+           
+        </script>  
 
 <script src="tv.js"></script>
 
