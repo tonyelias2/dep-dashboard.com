@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Live Music</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .video-container{
+                margin-bottom: 50px;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
 
-<head>
-    <title>Live Music</title>
-    <link rel="stylesheet" href="music.css">
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
-    <div class="gcse-search"></div>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                    <h2>
-                        <class class="logo">Design <font color="#fff33f">Engineering</font> Partners</class>
-                    </h2>
+    <body>
+        <div class="centered-container">
+            <div class="gcse-search"></div>
+            <div class="main">
+                <div class="icon">
+                    <h2> Design <span class="yellow">Engineering</span> Partners</h2>
+                    <div class="weather-widget">
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                            data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5" data-theme="orange"
+                            data-basecolor="#fff33f">Lebanon Weather
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="menu">
+                        <ul class="header-menu">
+                            <li><a href="index.html">Login</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="tvs.html">Live TVs</a></li>
+                            <li><a href="cities.html">Live Cities</a></li>
+                            <li><a href="excel.html">Excel</a></li>
+                            <li><a href="widget.html">Widget</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="Reminder.html">Reminder</a></li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="recipe.html">Food Recipe</a></li>
+                            <li><a href="joke.html">Jokes</a></li>
+                            <li><a href="corona.html">Covid-19</a></li>
+                            <li><a href="indexx.html">Weather Forecast</a></li>
+                            <li><a href="music.html">Live Music</a></li>
+                        </ul>
+                    </div>
+                </div>   
+                <div class="video-container flex-container flex-start">
+                    <div id="myId1" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId1')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/Dx5qFachd3A?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <div id="myId2" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId2')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/36YnV9STBqc?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId3" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId3')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/QN1uygzp56s?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+        
+                    <div id="myId4" class="video">
+                        <span id="x" class="close-x" onclick="removeVideo('myId4')">X</span>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/C9DqEdhDk4A?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>   
+                <iframe width="1810" height="700" src="https://worldradiomap.com/?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <iframe width="1810" height="700" src="http://radio.garden/visit/zouk-mosbeh/rF6xyeZP?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>              
             </div>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
-            data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5"
-            data-theme="orange" data-basecolor="#fff33f">Lebanon Weather</a>
+        </div>
+        <script src="tv.js"></script>
+        <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>    
         <script>
             !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-        </script>
-            <br><br><br>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Login</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="tvs.html">Live TVs</a></li>
-                    <li><a href="cities.html">Live Cities</a></li>
-                    <li><a href="excel.html">Excel</a></li>
-                    <li><a href="widget.html">Widget</a></li>
-                    <li><a href="graph.html">Graph</a></li>
-                    <li><a href="Reminder.html">Reminder</a></li>
-                    <li><a href="quotes.html">Quotes</a></li>
-                    <li><a href="recipe.html">Food Recipe</a></li>
-                    <li><a href="joke.html">Jokes</a></li>
-                    <li><a href="corona.html">Covid-19</a></li>
-                    <li><a href="indexx.html">Weather Forecast</a></li>
-                    <li><a href="music.html">Live Music</a></li>
-                </ul>
-            </div>
-            <br><br><br><br><br><br>
-
-            <iframe width="450" height="280" src="https://www.youtube.com/embed/Dx5qFachd3A?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            <iframe width="450" height="280" src="https://www.youtube.com/embed/36YnV9STBqc?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            <iframe width="450" height="280" src="https://www.youtube.com/embed/QN1uygzp56s?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            <iframe width="450" height="280" src="https://www.youtube.com/embed/C9DqEdhDk4A?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            <iframe width="1810" height="700" src="https://worldradiomap.com/?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            <iframe width="1810" height="700" src="http://radio.garden/visit/zouk-mosbeh/rF6xyeZP?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-            
-            
-            
-        </body>
-                </html>
+        </script>  
+           
+    </body>
+</html>
           

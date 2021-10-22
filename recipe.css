@@ -5,23 +5,8 @@
   
   .main {
     width: 100%;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0, 0.5) 50%
-      ),
-      url("pexels-pixabay-268533.jpg");
-    background-color: #000;
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
   }
   
-  .navbar {
-    width: 1830px;
-    height: 75px;
-    margin: auto;
-  }
   
   .icon {
     width: 500px;

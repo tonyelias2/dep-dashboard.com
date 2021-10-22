@@ -24,8 +24,8 @@
 }
 
 .icon {
-  width: 500px;
-  float: left;
+  display: flex;
+  justify-content: space-between;
   height: 70px;
 }
 

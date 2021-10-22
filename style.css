@@ -2,31 +2,44 @@
   margin: 0;
   padding: 0;
 }
-
+.weatherInformer18{
+  width: 600px !important;
+  min-width: 100% !important;
+  height: 200px;
+}
+.gsc-control-cse{
+ padding: 1em 0 !important ;
+}
 .main {
   width: 100%;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
-    ),
-    url("pexels-pixabay-268533.jpg");
-  background-color: #000;
-  background-position: center;
-  background-size: cover;
-  height: 109vh;
+  height: 100vh;
+}
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weatherInformer18-logo{
+  display: none !important;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-between{
+  justify-content: space-between;
 }
 
 .navbar {
-  width: 1830px;
-  height: 75px;
-  margin: auto;
+  width: 100%;
+  height: 40px;
+  margin:auto auto 30px auto;
 }
 
 .icon {
-  width: 500px;
-  float: left;
-  height: 70px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -39,22 +52,16 @@
 }
 
 .menu {
-  width: 700px;
+  width: 100%;
   float: left;
-  height: 70px;
 }
 
 ul {
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 ul li {
   list-style: none;
-  margin-left: 50px;
-  margin-top: 27px;
   font-size: 20px;
 }
 
@@ -273,17 +280,15 @@ ul li a:hover {
 .icon ion-icon:hover {
   color: #fff33f;
 }
-
+.weather-widget{
+  width: 100%;
+}
 .weatherwidget-io {
-  width: 320px;
-  margin-right: 100px;
+  width: 100%;
   margin-top: 20px;
   padding-left: 50px;
-  float: right;
-  position: absolute;
   border-radius: 15px;
   background: transparent;
-  right: -50px;
 }
 
 .excel {
@@ -299,9 +304,6 @@ h2 {
   font-family: "Oswald", sans-serif;
 }
 
-body {
-  background-color: yellow;
-}
 
 .container {
   width: 320px;
@@ -341,8 +343,17 @@ body {
   font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
-    background: url("pexels-pixabay-268533.jpg");
+    /* background: url("pexels-pixabay-268533.jpg"); */
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url("pexels-pixabay-268533.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .loan {
@@ -377,10 +388,6 @@ h2 {
   margin-top: 40px;
 }
 
-body {
-  background-color: black;
-}
-
 .clock {
   color: #fff33f;
   font-size: 60px;
@@ -402,12 +409,6 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  color: #fff33f;
-}
 
 #container-login {
   background-color: transparent;
@@ -469,12 +470,25 @@ body {
 input[type="checkbox"] {
   cursor: pointer;
 }
+.video{
+  width: calc(100% /4);
+  position: relative;
+}
+.close-x{
+  position: absolute;
+  right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  top: 0;
+  color: white;
+  cursor: pointer;
+}
 
 input[type="text"] {
   color: #fff;
   margin: 0;
   background-color: transparent;
-  border: 1px solid #373b3d;
+  border: 1px solid white;
   padding: 6px 0px;
   border-radius: 3px;
 }
@@ -589,11 +603,14 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 3px;
 }
-
-body {
-  background-color: black;
+.flex-start{
+  justify-content: flex-start;
 }
-
+.centered-container{
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+}
 .clock {
   color: #fff33f;
   font-size: 30px;
@@ -618,17 +635,4 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.clocke {
-  margin-left: 40%;
-  margin-top: -8.8%;
-}
 
-.clockt {
-  margin-top: -8.8%;
-  margin-right: 80%;
-}
-
-.clockp {
-  margin-top: -8.8%;
-  margin-right: 40%;
-}

@@ -1,208 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .yellow{
+                color: #fff33f;
+            }
+            ul{
+                height: 100%;
+            }
+            .weatherInformer18{
+                background: transparent !important;
+                border: 0 !important;
+            }
+            .weatherInformer18 ul li.weatherInformer18-week .weatherInformer18-week__table td{
+                color: white;
+            }
+            .weatherInformer18-week__data{
+                color: black !important;
+            }
+            .weatherInformer18 ul li.weatherInformer18-city{
+                font-size: 20px !important;
+                line-height: 35px;
+                color: #fff33f;
+            }
+            .weatherInformer18-week{
+                height: 115px;
+            }
+            .clocks{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            h2{
+                color: white;
+            }
+            .centered-container{
+                max-width: 1600px;
+                margin: auto;
+                width: 100%;
+            }
+            .ww-informers-box-854754{
+                -webkit-animation-name:ww-informers54;
+                animation-name:ww-informers54;
+                -webkit-animation-duration:1.5s;
+                animation-duration:1.5s;
+                white-space:nowrap;
+                overflow:hidden;
+                -o-text-overflow:ellipsis;
+                text-overflow:ellipsis;
+                font-size:12px;
+                font-family:Arial;
+                line-height:18px;
+                text-align:center
+            }
+            .ww-informers-box-854753{
+                width: calc((100% - 100px) / 2);
+            }
+            .weather{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            @-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            @keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+        </style>
+        <script src="script.js"></script>
+    </head>
 
-<body>
-
-    <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
-    <div class="gcse-search"></div>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2>
-                    <class class="logo">Design <font color="#fff33f">Engineering</font> Partners</class>
-                </h2>
-            </div>
-<br><br><br><br><br><br><br><br>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Login</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="tvs.html">Live TVs</a></li>
-                    <li><a href="cities.html">Live Cities</a></li>
-                    <li><a href="excel.html">Excel</a></li>
-                    <li><a href="widget.html">Widget</a></li>
-                    <li><a href="graph.html">Graph</a></li>
-                    <li><a href="Reminder.html">Reminder</a></li>
-                    <li><a href="quotes.html">Quotes</a></li>
-                    <li><a href="recipe.html">Food Recipe</a></li>
-                    <li><a href="joke.html">Jokes</a></li>
-                    <li><a href="corona.html">Covid-19</a></li>
-                    <li><a href="indexx.html">Weather Forecast</a></li>
-                    <li><a href="music.html">Live Music</a></li>
-                </ul>
-            </div>
-            <br><br><br><br><br><br><br>
-            <div class="clockl">
-            <div style="text-align:center;padding:1em 0;">
-                <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/276781"><span
-                            style="color: yellow;"></span><br />Beirut, Lebanon</a></h4> <iframe
-                    src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FBeirut"
-                    width="100%" height="90" frameborder="0" seamless></iframe>
-            </div>
-            </div>
-
-            <div class="clocke">
-            <div style="text-align:center;padding:1em 0;">
-                <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/4257227"><span
-                            style="color:yellow;"></span><br />Evansville, United States</a></h4> <iframe
-                    src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago"
-                    width="100%" height="90" frameborder="0" seamless></iframe>
-            </div>
-            </div>
-            <div class="clockt">
-                <div style="text-align:center;padding:1em 0;">
-                    <h4><a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/6167865"><span
-                                style="color:yellow;"></span><br />Toronto, Canada</a></h4> 
-                    <iframe
-                        src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto"
-                        width="100%" height="90" frameborder="0" seamless>
-                    </iframe>
+    <body>
+        <div class="centered-container">
+            
+            <div class="gcse-search"></div>
+    
+            <div class="main">
+                <div class="icon">
+                    <h2> Design <span class="yellow">Engineering</span> Partners</h2>
                 </div>
-            </div>
-
-            <div class="clockp">
-                <div style="text-align:center;padding:1em 0;">
-                    <h4><a style="color: yellow ;" href="https://www.zeitverschiebung.net/en/city/2988507"><span
-                                style="color:yellow;"></span><br />Paris, France</a></h4> <iframe
-                        src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FParis"
-                        width="100%" height="90" frameborder="0" seamless></iframe>
+                <div class="navbar">
+                   
+                    <div class="menu">
+                        <ul class="header-menu">
+                            <li><a href="index.html">Login</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="tvs.html">Live TVs</a></li>
+                            <li><a href="cities.html">Live Cities</a></li>
+                            <li><a href="excel.html">Excel</a></li>
+                            <li><a href="widget.html">Widget</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="Reminder.html">Reminder</a></li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="recipe.html">Food Recipe</a></li>
+                            <li><a href="joke.html">Jokes</a></li>
+                            <li><a href="corona.html">Covid-19</a></li>
+                            <li><a href="indexx.html">Weather Forecast</a></li>
+                            <li><a href="music.html">Live Music</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <br>
-            
-            <div id="cf0ab4d41e8fb30fec2eed8eac7dad71" class="ww-informers-box-854753">
-                <p class="ww-informers-box-854754"><a href="https://world-weather.info/forecast/lebanon/beyrouth/month/">Weather in
-                        Beirut for a month</a><br><a
-                        href="https://world-weather.info/forecast/usa/salt_lake_city/">world-weather.info</a></p>
-            </div>
-            <script async type="text/javascript" charset="utf-8"
-                src="https://world-weather.info/wwinformer.php?userid=cf0ab4d41e8fb30fec2eed8eac7dad71"></script>
-            <style>
-                .ww-informers-box-854754 {
-                    -webkit-animation-name: ww-informers54;
-                    animation-name: ww-informers54;
-                    -webkit-animation-duration: 1.5s;
-                    animation-duration: 1.5s;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    -o-text-overflow: ellipsis;
-                    text-overflow: ellipsis;
-                    font-size: 12px;
-                    font-family: Arial;
-                    line-height: 18px;
-                    text-align: center
-                }
-            
-                @-webkit-keyframes ww-informers54 {
-            
-                    0%,
-                    80% {
-                        opacity: 0
-                    }
-            
-                    100% {
-                        opacity: 1
-                    }
-                }
-            
-                @keyframes ww-informers54 {
-            
-                    0%,
-                    80% {
-                        opacity: 0
-                    }
-            
-                    100% {
-                        opacity: 1
-                    }
-                }
-            </style>
-            
-            
-
-            
-            <br>
-            <div id="ae8d0d0849d7cb0d7ec0ed0479912532" class="ww-informers-box-854753">
-                <p class="ww-informers-box-854754"><a href="https://world-weather.info/forecast/usa/evansville/7days/">Weather in
-                        Evansville for 7 days</a><br><a href="https://world-weather.info/">world-weather.info</a></p>
-            </div>
-            <script async type="text/javascript" charset="utf-8"
-                src="https://world-weather.info/wwinformer.php?userid=ae8d0d0849d7cb0d7ec0ed0479912532"></script>
-            <style>
-                .ww-informers-box-854754 {
-                    -webkit-animation-name: ww-informers54;
-                    animation-name: ww-informers54;
-                    -webkit-animation-duration: 1.5s;
-                    animation-duration: 1.5s;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    -o-text-overflow: ellipsis;
-                    text-overflow: ellipsis;
-                    font-size: 12px;
-                    font-family: Arial;
-                    line-height: 18px;
-                    text-align: center
-                }
-            
-                @-webkit-keyframes ww-informers54 {
-            
-                    0%,
-                    80% {
-                        opacity: 0
-                    }
-            
-                    100% {
-                        opacity: 1
-                    }
-                }
-            
-                @keyframes ww-informers54 {
-            
-                    0%,
-                    80% {
-                        opacity: 0
-                    }
-            
-                    100% {
-                        opacity: 1
-                    }
-                }
-            </style>
-            
-            <iframe id="myIframe" width="100%" height="300" frameborder="0" seamless></iframe>
-            <form id="myForm" action="/dep-dashboard.com-main/home.html">
-                Please Insert The Embedded Code Here: <input type="text" id="url" placeholder="https://www.youtube.com/embed/ID" ><br>
-                <input type="button" onclick="myFunction()" value="Submit form">
-              </form>
-
-            
-                        
-
-            <script>
-                function myFunction() {
-                var url_string = document.getElementById("url").value
-                let myIframe = document.getElementById("myIframe");
-                let width = "728";
-                let height = "90";        
-                myIframe.src = url_string;
-                alert(document.getElementById("url").value)
-              }
-               
-            </script>
-
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
-
-
-
-</body>
-
+                <div class="clocks">
+                    <div class="clockl">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/276781">
+                                    Beirut, Lebanon
+                                </a>
+                            </h4> 
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FBeirut"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clocke">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/4257227">Evansville, United States</a>
+                            </h4> 
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clockt">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow;" href="https://www.zeitverschiebung.net/en/city/6167865">Toronto, Canada</a>
+                            </h4> 
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="clockp">
+                        <div style="text-align:center;padding:1em 0;">
+                            <h4>
+                                <a style="color: yellow ;" href="https://www.zeitverschiebung.net/en/city/2988507">Paris, France</a>
+                            </h4> 
+                            <iframe
+                                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FParis"
+                                width="100%" height="90" frameborder="0" seamless>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div id="cbc71ebc85e2c692e5da13d1b1d9f7d5" class="ww-informers-box-854753">
+                        <p class="ww-informers-box-854754">
+                            <a href="https://world-weather.info/forecast/lebanon/beyrouth/month/">world-weather.info/forecast/lebanon/beyrouth/month/</a>
+                            <a href="https://world-weather.info/forecast/usa/boyce/">world-weather.info</a>
+                        </p>
+                    </div>
+                    <div id="3eeee1ec41629c58cc3ed6e2c2709814" class="ww-informers-box-854753">
+                        <p class="ww-informers-box-854754">
+                            <a href="https://world-weather.info/forecast/usa/evansville/">Weather in Evansville</a>
+                            <a href="https://world-weather.info/forecast/usa/memphis/">Weather in Memphis</a>
+                        </p>
+                    </div>
+                </div>
+    
+            </div>    
+        </div>
+        <script>
+            window.onload = function() {
+                setTimeout(
+                    ()=>{
+                        var array = document.getElementsByClassName('weatherInformer18-week__data')
+                        console.log(array)
+                        for (let item of array) {
+                            let span = item.innerHTML.split('<span>')[1]
+                            let temperature = span.split('</span>')[0]
+                            let number = +temperature.split('+')[1]
+                            if(number > 27){
+                                item.setAttribute('style', 'color: red !important')
+                            }
+                            console.log(item);
+                        }
+                        // var array = document.getElementsByClassName('weatherInformer18-now__desc')
+                        // console.log(array)
+                        // for (let item of array) {
+                        //     let span = item.innerHTML.split('Pressure')[0]
+                        //     console.log(span, 'here')
+                        //     let temperature = span.split(',')[1]
+                        //     let number = +temperature.split('m/s')[0]
+                        //     if(number > 2){
+                        //         item.setAttribute('style', 'color: red !important')
+                        //     }
+                        //     console.log(number);
+                        // }
+                    },100
+                )
+              
+            };
+        </script>
+        <script async type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=3eeee1ec41629c58cc3ed6e2c2709814"></script>
+        <script async type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=cbc71ebc85e2c692e5da13d1b1d9f7d5"></script>
+        <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+    </body>
 </html>
