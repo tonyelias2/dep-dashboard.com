@@ -413,11 +413,11 @@ h2 {
   top: 20%;
   margin: auto;
   width: 340px;
-  height: 445px;
+  height: 480px;
   border-radius: 0.35em;
 
   text-align: center;
-
+color: white;
   margin-right: 200px;
   margin-top: -350px;
 }
@@ -430,7 +430,7 @@ h2 {
   width: 340px;
   height: 480px;
   border-radius: 0.35em;
-
+color: white;
   text-align: center;
   margin-top: -740px;
 }
