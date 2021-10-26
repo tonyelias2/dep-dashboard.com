@@ -9,25 +9,30 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="styleee.css" />
-        <link rel="icon" href="favicon.ico" />
+        
+        <link rel="stylesheet" href="style.css">
+        
 
         <title>Weather Forecast</title>
     </head>
     <body>
-        <div class="main">
-            <div class="navbar">
+        <div class="centered-container">
+            <div class="gcse-search"></div>
+        
+            <div class="main">
                 <div class="icon">
-                    <h2>
-                        <class class="logo">Design <font color="#fff33f">Engineering</font> <br> Partners</class>
-                    </h2>
-                    <br><br>
+                    <h2> Design <span class="yellow">Engineering</span> Partners</h2>
+                    <div class="weather-widget">
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                            data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5" data-theme="orange"
+                            data-basecolor="#fff33f">Lebanon Weather
+                        </a>
+                    </div>
                 </div>
-  
-                <br><br><br><br><br><br><br><br>
-            <div class="menu">
-                    <ul class="header-menu">
-                        <li><a href="index.html">Login</a></li>
+                <div class="navbar">
+                    <div class="menu">
+                        <ul class="header-menu">
+                            <li><a href="index.html">Login</a></li>
                             <li><a href="home.html">Home</a></li>
                             <li><a href="tvs.html">Live TVs</a></li>
                             <li><a href="cities.html">Live Cities</a></li>
@@ -40,17 +45,13 @@
                             <li><a href="joke.html">Jokes</a></li>
                             <li><a href="indexx.html">Weather Forecast</a></li>
                             <li><a href="music.html">Live Music</a></li>
-                        </li>
-        
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                <br><br><br><br>
-        
-<br><br><br><br><br><br><br><br>
+                <br><br><br>
         <div
             id="search-box"
-            class="genericBox container p-4 d-flex justify-content-center align-items-center flex-column text-center position-relative"
+            class="genericBox"
         >
             <form id="search-form" class="animate__fadeIn">
                 <input
@@ -164,4 +165,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="script-js.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 </html>
