@@ -6,20 +6,25 @@
   <title>Food Recipe Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel = "stylesheet" href = "recipe.css">
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
-    
+  <div class="centered-container">
+    <div class="gcse-search"></div>
 
     <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2>
-                    <class class="logo">Design <font color="#fff33f">Engineering</font> Partners</class>
-                </h2>
+        <div class="icon">
+            <h2> Design <span class="yellow">Engineering</span> Partners</h2>
+            <div class="weather-widget">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                    data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5" data-theme="orange"
+                    data-basecolor="#fff33f">Lebanon Weather
+                </a>
             </div>
-
-            <br><br><br><br><br><br><br><br>
+        </div>
+        <div class="navbar">
             <div class="menu">
                 <ul class="header-menu">
                     <li><a href="index.html">Login</a></li>
@@ -38,8 +43,9 @@
                     <li><a href="music.html">Live Music</a></li>
                 </ul>
             </div>
-<br><br><br><br><br><br>
-            <div class = "container">
+        </div>
+        <br><br>
+            <div class = "containerr">
                 <div class = "meal-wrapper">
                   <div class = "meal-search">
                     <h2 class = "title">Find Meals For Your Ingredients</h2>
@@ -102,6 +108,8 @@
             
             
               <script src = "recipe.js"></script>
-
+              <script>
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
             </body>
             </html>

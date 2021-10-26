@@ -175,7 +175,7 @@
                             let span = item.innerHTML.split('<span>')[1]
                             let temperature = span.split('</span>')[0]
                             let number = +temperature.split('+')[1]
-                            if(number > 27){
+                            if(number > 25){
                                 item.setAttribute('style', 'color: red !important')
                             }
                             console.log(item);

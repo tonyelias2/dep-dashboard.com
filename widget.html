@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
+    <head>
+        <title>Widgets Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           
+            .input{
+                min-width: 300px;
+                max-width: 500px;
+            }
+           
+            .button{
+                background: white;
+                border: 0;
+                border-radius: 0;
+            }
+            .video-container{
+                margin-top: 50px;
+            }
 
-<body>
+        </style>
+        <script src="script.js"></script>
+    </head>
 
-    <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
-    <div class="gcse-search"></div>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2>
-                    <class class="logo">Design <font color="#fff33f">Engineering</font> Partners</class>
-                </h2>
-            </div>
-
-            <br><br><br><br><br><br><br><br>
-            <div class="menu">
-                <ul class="header-menu">
-                    <li><a href="index.html">Login</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="tvs.html">Live TVs</a></li>
-                    <li><a href="cities.html">Live Cities</a></li>
-                    <li><a href="excel.html">Excel</a></li>
-                    <li><a href="widget.html">Widget</a></li>
-                    <li><a href="graph.html">Graph</a></li>
-                    <li><a href="Reminder.html">Reminder</a></li>
-                    <li><a href="quotes.html">Quotes</a></li>
-                    <li><a href="recipe.html">Food Recipe</a></li>
-                    <li><a href="joke.html">Jokes</a></li>
-                    <li><a href="corona.html">Covid-19</a></li>
-                    <li><a href="indexx.html">Weather Forecast</a></li>
-                    <li><a href="music.html">Live Music</a></li>
-                </ul>
-            </div>
-            <br><br><br><br><br><br>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
-                data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5"
-                data-theme="orange" data-basecolor="#fff33f">Lebanon Weather</a>
+    <body>
+        <div class="centered-container">
+            <div class="gcse-search"></div>
+        
+            <div class="main">
+                <div class="icon">
+                    <h2> Design <span class="yellow">Engineering</span> Partners</h2>
+                    <div class="weather-widget">
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/33d8935d50/beirut/" data-label_1="Lebanon"
+                            data-label_2="Weather" data-font="Arial Black" data-icons="Climacons Animated" data-days="5" data-theme="orange"
+                            data-basecolor="#fff33f">Lebanon Weather
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="menu">
+                        <ul class="header-menu">
+                            <li><a href="index.html">Login</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="tvs.html">Live TVs</a></li>
+                            <li><a href="cities.html">Live Cities</a></li>
+                            <li><a href="excel.html">Excel</a></li>
+                            <li><a href="widget.html">Widget</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="Reminder.html">Reminder</a></li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="recipe.html">Food Recipe</a></li>
+                            <li><a href="joke.html">Jokes</a></li>
+                            <li><a href="corona.html">Covid-19</a></li>
+                            <li><a href="indexx.html">Weather Forecast</a></li>
+                            <li><a href="music.html">Live Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+           
             <script>
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
             </script>
-            <br>
-            <br>
-            <br><br>
+           
           
             
             
 
-                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                
 
 
 
@@ -65,15 +80,8 @@
     <h2 id="payment"></h2>
 </div>
 
-<script src="app.js"></script>
-
-
 <div id="myTime" onload="showTime()" class="clock"></div>
 
-
-
-
-<br><br><br><br><br><br><br>r
 <div class="converter">
 <div id="oanda_ecc">
     <!-- Note: If you alter or remove the following code, the embedded currency widget will not work-->
@@ -83,10 +91,8 @@
 </div>
 </div>
 
-<br>
-<br>
 
-<script src="https://cdn.logwork.com/widget/clock.js"></script>
+
 <a href="https://logwork.com/current-time-in-beirut-lebanon-beyrouth" class="clock-time" data-style="black-gold"
     data-size="250" data-timezone="Asia/Beirut">Current time in Beirut, Lebanon</a>
 
@@ -238,6 +244,9 @@
             }
         }
     </style>
+    <script src="https://cdn.logwork.com/widget/clock.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
