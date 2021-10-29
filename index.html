@@ -25,6 +25,7 @@
     </head>
 
     <body>
+     
         <div class="centered-container">
             <div class="gcse-search"></div>
         
@@ -51,22 +52,12 @@
                         </ul>
                     </div>
                 </div>
-            
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
-        <div class="form">
+        <form class="form">
             <h2>Login Here</h2>
-            <input type="email" name="email" placeholder="Enter Email Here">
-            <input type="password" name="password" placeholder="Enter Password here">
-            <button class="btnn"><a href="#">Login</a></button>
+            <input type="email" name="email" id="email" placeholder="Enter Email Here">
+            <input type="password" id="password" name="password" placeholder="Enter Password here">
+            <button class="btnn" type="submit" id="submit">Login</button>
         
             <p class="link">Don't have an account <br>
                 <a href="#">Sing up</a> Here</a>
@@ -90,151 +81,11 @@
                     <ion-icon name="logo-skype"></ion-icon>
                 </a>
             </div>
-        </div>
-        </div>
-        </div>
-
-          >
-
-    
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
-    
-
-  
-
-  
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    <meta name="description" content="Login - Register Template">
-    <meta name="author" content="Lorenzo Angelino aka MrLolok">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            background-color: #303641;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="container-register">
-        <div id="title">
-            <i class="material-icons lock">lock</i> Register
-        </div>
-
-        <form>
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">email</i>
-                </div>
-                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">face</i>
-                </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">vpn_key</i>
-                </div>
-                <input id="password" placeholder="Password" type="password" required class="validate"
-                    autocomplete="off">
-            </div>
-
-            <div class="remember-me">
-                <input type="checkbox">
-                 <p>I accept Terms of Service</p> 
-            </div>
-
-            <input type="submit" value="Register" />
         </form>
-
-        <div class="privacy">
-            <a href="#">Privacy Policy</a>
-        </div>
-
-        
-        </div>
-    </div>
-</body>
-
-</html>
-
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <meta name="description" content="Login - Register Template">
-    <meta name="author" content="Lorenzo Angelino aka MrLolok">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <style>
-        body {
-            background-color: #303641;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="container-login">
-        <div id="title">
-            <i class="material-icons lock">lock</i> Login
-        </div>
-
-        <form>
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">face</i>
-                </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">vpn_key</i>
-                </div>
-                <input id="password" placeholder="Password" type="password" required class="validate"
-                    autocomplete="off">
-            </div>
-
-            <div class="remember-me">
-                <input type="checkbox">
-                <span style="color: #DDD">Remember Me</span>
-            </div>
-
-            <input type="submit" value="Log In" />
-        </form>
-
-        <div class="forgot-password">
-            <a href="#">Forgot your password?</a>
-        </div>
-        <div class="privacy">
-            <a href="#">Privacy Policy</a>
-        </div>
-
-       
-    </div>
-</body>
-
-</html>
-
-</body>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="firebase.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
 
 </html>
