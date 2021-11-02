@@ -12,6 +12,8 @@ firebase.initializeApp(firebaseConfig)
 
 var firestore = firebase.firestore()
 
+var auth = firebase.auth();
+
 const db = firestore.collection('user')
 
 let submitBtn = document.getElementById('submit')
@@ -33,3 +35,42 @@ submitBtn.addEventListener("click", (e)=>{
         }
     )
 })
+
+auth.onAuthStateChanged(user=> {
+    if(user) {
+        console.log('user logged in: ', user);
+    } else {
+        console.log('user logged out', user);
+    }
+});
+
+//user login
+const loginForm = document.querySelector('#login-form');
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    //get user info
+    const email = loginForm['email'].value;
+    const password = loginForm['password'].value;
+
+    //log the user in
+    auth.signInWithEmailAndPassword(email, password).then((cred)=> {
+
+        //reset form
+        loginForm.reset();
+        window.location.href = "/home.html";
+
+        
+        
+    });
+});
+
+//log-out form
+const logoutForm = document.querySelector('#log-out');
+log-out.addEventListener('click', (e) => {
+    e.preventDefault();
+
+logoutForm.reset();
+window.location.href = "/index.html";
+});

@@ -25,44 +25,36 @@
     </head>
 
     <body>
+        
      
         <div class="centered-container">
             <div class="gcse-search"></div>
         
             <div class="main">
                 <div class="icon">
+
                     <h2> Design <span class="yellow">Engineering</span> Partners</h2>
                     
                 </div>
                 <div class="navbar">
                     <div class="menu">
                         <ul class="header-menu">
-                            <li><a href="index.html">Login</a></li>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="tvs.html">Live TVs</a></li>
-                            <li><a href="cities.html">Live Cities</a></li>
-                            <li><a href="excel.html">Excel</a></li>
-                            <li><a href="widget.html">Widget</a></li>
-                            <li><a href="graph.html">Graph</a></li>
-                            <li><a href="quotes.html">Quotes</a></li>
-                            <li><a href="recipe.html">Food Recipe</a></li>
-                            <li><a href="joke.html">Jokes</a></li>                          
-                            <li><a href="indexx.html">Weather Forecast</a></li>
-                            <li><a href="music.html">Live Music</a></li>
+                            
                         </ul>
                     </div>
                 </div>
 
-        <form class="form">
+        <form id="login-form" class="form">
             <h2>Login Here</h2>
             <input type="email" name="email" id="email" placeholder="Enter Email Here">
             <input type="password" id="password" name="password" placeholder="Enter Password here">
             <button class="btnn" type="submit" id="submit">Login</button>
-        
-            <p class="link">Don't have an account <br>
-                <a href="#">Sing up</a> Here</a>
+        <!---
+             <p class="link">Don't have an account <br>
+                 <a href="#">Sing up</a> Here</a>
             </p>
             <p class="liw">Log in with</p>
+        
         
             <div class="icon">
                 <a href="#">
@@ -81,9 +73,11 @@
                     <ion-icon name="logo-skype"></ion-icon>
                 </a>
             </div>
+        -->
         </form>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
         <script src="firebase.js"></script>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>

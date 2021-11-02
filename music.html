@@ -42,6 +42,16 @@
                         </ul>
                     </div>
                 </div>   
+
+                <form id="myForm" action="/dep-dashboard.com-main/home.html">
+                    <p style="margin-bottom: 10px;">
+                        Add video: 
+                    </p>
+                    <input class="input" type="text" id="url" placeholder="https://www.youtube.com/embed/ID" ><br>
+                    <input type="button" class="input button" onclick="myFunction()" value="Add Video">
+                </form>
+        
+
                 <div class="video-container flex-container flex-start">
                     <div id="myId1" class="video">
                         <span id="x" class="close-x" onclick="removeVideo('myId1')">X</span>
@@ -73,6 +83,10 @@
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
+                    </div>
+                    <div class="video" id="user-video">
+                        <span id="x" class="close-x" onclick="removeVideo('user-video')">X</span>
+                        <iframe id="myIframe" width="100%" height="280" frameborder="0" seamless></iframe>
                     </div>
                 </div>   
                 <iframe width="100%" height="700" src="https://worldradiomap.com/?rel=0&controls=1&showinfo=0&autoplay=0&modestbranding=0" 
