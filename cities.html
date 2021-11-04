@@ -56,12 +56,24 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="youtube-search">
+                    <div id="buttons">
+                        <label>
+                            <input id="query" value='New York' type="text" />
+                            <button id="search-buttonn" onclick="keyWordsearch()">Search</button>
+                        </label>
+                        <div id="container">
+                            <h1>Search Results</h1>
+                            <ul id="results"></ul>
+                        </div>
+                    </div>
                 
                 <form id="myForm" action="/dep-dashboard.com-main/home.html">
                     <p style="margin-bottom: 10px;">
                         Add video: 
                     </p>
-                    <input class="input" type="text" id="url" placeholder="https://www.youtube.com/embed/ID" ><br>
+                    <input class="input" type="text" id="url" placeholder="Please Insert The Embedded Code Here" ><br>
                     <input type="button" class="input button" onclick="myFunction()" value="Add Video">
                 </form>
         
@@ -191,6 +203,12 @@
             !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
         </script>
         <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+            <script async src="https://cse.google.com/cse.js?cx=0d7fffdf982d52b6d"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+        
+        
+
 
     </body>
 
